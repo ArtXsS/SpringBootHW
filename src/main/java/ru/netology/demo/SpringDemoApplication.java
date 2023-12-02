@@ -18,7 +18,7 @@ public class SpringDemoApplication {
 		SpringApplication.run(SpringDemoApplication.class, args);
 	}
 
-	@ConditionalOnProperty("profile")
+	@ConditionalOnProperty("dev")
 	@Bean
 	public SystemProfile devProfile() {
 		return new DevProfile();
