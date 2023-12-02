@@ -23,7 +23,7 @@ public class SpringDemoApplication {
 	public SystemProfile devProfile() {
 		return new DevProfile();
 	}
-	@ConditionalOnProperty("profile")
+	@ConditionalOnProperty("prod")
 	@Bean
 	public SystemProfile prodProfile() {
 		return new ProductionProfile();
